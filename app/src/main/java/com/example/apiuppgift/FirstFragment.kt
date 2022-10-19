@@ -47,27 +47,29 @@ class FirstFragment : Fragment() {
 
 
 
-
-
         binding.buttonFirst.setOnClickListener {
+
             UserName  = binding.editTextTextEmailAddress.text.toString().filter {  !it.isWhitespace()  }
             pass = binding.editTextTextPassword.text.toString().filter {  !it.isWhitespace()  }
             Log.d("user", pass)
 
 
             loginCheck(UserName, pass)
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+
         }
     }
     fun loginCheck(UserName: String ,  pass: String){
         var auth: FirebaseAuth = Firebase.auth
+        Firebase.auth.signOut()
         var main: MainActivity = getParentFragment()?.getActivity() as MainActivity
-        auth.signInWithEmailAndPassword(UserName, pass)
+        auth.signInWithEmailAndPassword("zorpid@gmail.com", "test123")
             .addOnCompleteListener(main) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("Robin", "signInWithEmail:success")
+
                     val user = auth.currentUser
+                    findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
 
                 } else {
                     // If sign in fails, display a message to the user.
