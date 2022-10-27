@@ -45,4 +45,13 @@
             android:id="@+id/action_FragmentB_to_SecondFramgent"
             app:destination="@id/SecondFragment" />
     </fragment>
+
+    <activity
+        android:id="@+id/main2"
+        android:name="com.example.apiuppgift.MainActivity2"
+        tools:layout="@layout/activity_main2"><action
+        android:id="@+id/action_FragmentB_to_SecondFramgent"
+        app:destination="@id/FragmentA" />
+
+    </activity>
 </navigation>

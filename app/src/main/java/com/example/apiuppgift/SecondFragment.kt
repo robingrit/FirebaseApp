@@ -58,9 +58,9 @@ class SecondFragment : Fragment() {
             .get()
             .addOnSuccessListener { result ->
                 for (document in result) {
-                    Log.d("robin", "${document.id} => ${document.data}")
+                    Log.d("robin2", "${document.id} => ${document.data}")
                     te =document.data.toString()
-                    Log.d("Robin", te)
+                    Log.d("RobinTe", te)
 
                 }
             }
