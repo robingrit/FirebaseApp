@@ -30,6 +30,7 @@ import com.example.apiuppgift.databinding.FragmentABinding
 typealias LumaListener = (luma: Double) -> Unit
 
 
+
 class MainActivity2 : AppCompatActivity() {
     private var _binding: ActivityMain2Binding? = null
     private val binding get() = _binding!!

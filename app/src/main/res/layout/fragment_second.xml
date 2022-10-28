@@ -50,12 +50,14 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycleView"
-            android:layout_width="279dp"
-            android:layout_height="630dp"
-            android:layout_marginBottom="4dp"
+            android:layout_width="260dp"
+            android:layout_height="569dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="28dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.605"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.393"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ButtonA" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

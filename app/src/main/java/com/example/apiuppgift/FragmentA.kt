@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+
 import com.example.apiuppgift.databinding.FragmentABinding
 import com.example.apiuppgift.databinding.FragmentBBinding
 import com.example.apiuppgift.databinding.FragmentSecondBinding
@@ -42,7 +43,8 @@ class FragmentA : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.button3.setOnClickListener { findNavController().navigate(R.id.main2) }
+       // binding.button3.setOnClickListener { findNavController().navigate(R.id.main2) }
+        //binding.button3.setOnClickListener { findNavController().navigate(R.id.main2) }
 
     }
 
